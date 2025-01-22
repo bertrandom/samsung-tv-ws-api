@@ -4,16 +4,17 @@ SamsungTVWS - Samsung Smart TV WS API wrapper
 Copyright (C) 2019 DSR! <xchwarze@gmail.com>
 Copyright (C) 2021 Matthew Garrett <mjg59@srcf.ucam.org>
 
-SPDX-License-Identifier: GPL-2.0
+SPDX-License-Identifier: LGPL-3.0
 """
-from datetime import datetime
+
 import json
 import logging
 import random
 import socket
 import time
-from typing import Any, Dict, List, Optional, Union
 import uuid
+from datetime import datetime
+from typing import Any, Dict, List, Optional, Union
 
 import websocket
 

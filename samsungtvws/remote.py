@@ -3,8 +3,9 @@ SamsungTVWS - Samsung Smart TV WS API wrapper
 
 Copyright (C) 2019 DSR! <xchwarze@gmail.com>
 
-SPDX-License-Identifier: GPL-2.0
+SPDX-License-Identifier: LGPL-3.0
 """
+
 import logging
 import time
 from typing import Any, Dict, List, Optional, Union
@@ -209,6 +210,10 @@ class SendRemoteKey(RemoteControlCommand):
     @staticmethod
     def blue() -> "SendRemoteKey":
         return SendRemoteKey.click("KEY_BLUE")
+
+    @staticmethod
+    def factory() -> "SendRemoteKey":
+        return SendRemoteKey.click("KEY_FACTORY")
 
 
 class SamsungTVWS(connection.SamsungTVWSConnection):
